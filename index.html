@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ichat-Real Tme Note shockt .io chat app</title>
-    <script src="js/client.js"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script type="module" defer src="./js/client.js"></script>
     <style>
       body {
         background-image: linear-gradient(
@@ -23,8 +24,8 @@
       <div>smriti:hru</div>
     </div>
     <div>
-      <form action="#">
-        <input type="text" name="messageIno" />
+      <form action="#" id="send-container">
+        <input type="text" name="messageIno" id="messageInp" />
         <button class="btns">Send</button>
       </form>
     </div>
